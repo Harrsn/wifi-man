@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  padding: 30px;
+}
+.chatbox {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+#chat-log {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#user-input {
+  width: 80%;
+  padding: 10px;
+}
+button {
+  padding: 10px;
+}
