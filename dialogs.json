@@ -1,0 +1,46 @@
+{
+  "intro": {
+    "message": "Hi! I'm the Wi-Fi Wizard 🧙‍♂️. What’s your issue?\n1. Internet down\n2. Slow internet\n3. Disconnects\n4. Device won’t connect",
+    "next": "issue_selection"
+  },
+  "issue_selection": {
+    "slow": {
+      "message": "Are you on Wi-Fi or a wired connection?",
+      "next": "connection_type"
+    },
+    "disconnects": {
+      "message": "Does it happen on all devices or just one?\nTry switching to 2.4GHz if you’re far away or 5GHz if you’re close.",
+      "next": "band_explainer"
+    },
+    "down": {
+      "message": "Are any lights on your router red or off?",
+      "next": "router_status"
+    },
+    "default": {
+      "message": "Hmm, I didn’t catch that. Could you try rephrasing?",
+      "next": "issue_selection"
+    }
+  },
+  "connection_type": {
+    "wifi": {
+      "message": "How far are you from the router? Try switching to 5GHz if you're nearby, or 2.4GHz if you're farther away.",
+      "next": "band_explainer"
+    },
+    "wired": {
+      "message": "Try plugging your device directly into the ONT. Still slow? We may need to escalate this.",
+      "next": "escalate"
+    }
+  },
+  "band_explainer": {
+    "message": "🧙‍♂️ Wi-Fi Tip:\n- 2.4GHz = longer range, slower speed\n- 5GHz = shorter range, faster speed\nUse 5GHz for close-range devices like TVs or PCs. Use 2.4GHz for older devices or those farther from the router.",
+    "next": "resolved"
+  },
+  "escalate": {
+    "message": "Would you like me to notify a technician or create a support ticket?",
+    "next": "resolved"
+  },
+  "resolved": {
+    "message": "Is there anything else I can help you with?",
+    "next": "issue_selection"
+  }
+}
